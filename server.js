@@ -11,7 +11,7 @@ const tw = new Twitter({
   access_token_key: process.env.ACCESS_TOKEN_KEY, // Access Token
   access_token_secret: process.env.ACCESS_TOKEN_SECRET // Access Token Secret
 });
-const TARGET_HASHTAG = '#gogohanyu';
+const TARGET_HASHTAG = '#2029990217';
 
 const HOST = 'api.line.me';
 const CH_SECRET = process.env.LINE_CH_SECRET; // Channel Secret
