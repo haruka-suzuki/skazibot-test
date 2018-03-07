@@ -1,5 +1,9 @@
 'use strict';
 
+const appInsights = require('applicationinsights');
+appInsights.setup('ee149d7e-4ed7-4a53-9049-837cafec485b').start();
+
+
 const http = require('http');
 const https = require('https');
 const crypto = require('crypto');
