@@ -62,8 +62,7 @@ const pushClient = (userId, SendMessageObject) => {
 
 tw.stream('statuses/filter', {'track': TARGET_HASHTAG}, (stream) => {
   stream.on('data', (data) => {
-    if (data.text.indexOf('京王') !== -1) {
-        let PushSendMessageObject = [{
+            let PushSendMessageObject = [{
           type: 'text',
           text: data.text
         }];
@@ -74,6 +73,6 @@ tw.stream('statuses/filter', {'track': TARGET_HASHTAG}, (stream) => {
           }, (e) => {console.log(e)});
 
         console.log(data.text);
-    }
+
   });
 });
